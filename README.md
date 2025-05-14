@@ -33,3 +33,16 @@ Rice types:
   std = [0.2949, 0.2980, 0.3062]
   ```
 - **Train/Val/Test Split**: 70% / 15% / 15%
+
+## 🧠 CNN Architecture
+```
+Input: 3×64×64 RGB Image
+↓ Conv2D (3→16, kernel=5, padding=2) + ReLU
+↓ MaxPool2D (2×2)
+↓ Conv2D (16→32, kernel=3, padding=1) + ReLU
+↓ MaxPool2D (2×2)
+↓ Flatten (32×16×16 → 8192)
+↓ Fully Connected (8192 → 32) + ReLU
+↓ Fully Connected (32 → 4) → Output Logits
+```
+- Total trainable parameters: **268,164**
