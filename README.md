@@ -8,10 +8,12 @@ In the agricultural industry, ensuring the quality and correct classification of
 
 Traditionally, rice classification has relied on manual inspection, which is time-consuming, subjective, and prone to human error. As global demand grows, the industry needs scalable, automated, and accurate solutions. This project leverages a Convolutional Neural Network (CNN) to automate the classification of rice varieties based on image data. By analyzing grain features visually, the model assists in quality control, packaging, and supply chain verification, providing a faster, more consistent alternative to manual sorting.
 
-## Dataset
-- Source: Custom dataset with **RGB images** of rice grains.
+## The Dat
+
+Dataset: https://www.kaggle.com/datasets/muratkokludataset/rice-image-dataset
+
 - Each class contains a balanced number of images.
-- Total dataset: ~60,000 images
+- Total dataset: ~60,000 images, 15,000 images for each rice type
 - Image size resized to **64×64 pixels**
 
 Rice types:
