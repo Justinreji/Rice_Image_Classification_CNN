@@ -21,3 +21,15 @@ Rice types:
 - Basmati
 - Ipsala
 - Jasmine
+
+## Project Overview
+- **Framework**: PyTorch
+- **Model**: Custom CNN with 2 convolutional layers + 2 fully connected layers
+- **Loss Function**: CrossEntropyLoss
+- **Optimizer**: Adam
+- **Normalization**: Dataset-specific mean and std:
+  ```python
+  mean = [0.1259, 0.1272, 0.1301]
+  std = [0.2949, 0.2980, 0.3062]
+  ```
+- **Train/Val/Test Split**: 70% / 15% / 15%
