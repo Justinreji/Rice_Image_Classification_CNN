@@ -22,6 +22,9 @@ Rice types:
 - Ipsala
 - Jasmine
 
+![rice_images_ML](https://github.com/user-attachments/assets/146a2942-40e4-4e04-8763-c95917e94b01)
+
+
 ## Project Overview
 - **Framework**: PyTorch
 - **Model**: Custom CNN with 2 convolutional layers + 2 fully connected layers
@@ -46,3 +49,11 @@ Input: 3×64×64 RGB Image
 ↓ Fully Connected (32 → 4) → Output Logits
 ```
 - Total trainable parameters: **268,164**
+
+## 📈 Training Performance
+
+### 🔺 Training Loss and Test Accuracy
+Training Loss shows how well the model minimizes the classification error over training epochs. While Test Accuracy tracks model generalization across unseen test data after each epoch.
+
+![training_loss](https://github.com/user-attachments/assets/fb2e7f5c-0241-4c5a-a663-7403a076800a)
+
