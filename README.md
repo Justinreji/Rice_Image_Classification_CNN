@@ -65,3 +65,13 @@ Displays how often predictions match the actual rice class.
 ![rice_Image_Confusion_matrix](https://github.com/user-attachments/assets/8d04b76f-fde4-47ff-8772-8ea2547d0777)
 
 Model performs extremely well across all classes, very minimal misclassifications, mostly between visually similar grains.
+
+### Classification Report
+
+![Classification_report](https://github.com/user-attachments/assets/658e51e7-da25-4e7c-b1ee-067b00dfcbfc)
+
+## Results Summary
+- Final Validation Accuracy: **~99.5%**
+- Strong per-class performance across all metrics
+- No overfitting observed — training and test trends aligned
+
