@@ -8,7 +8,7 @@ In the agricultural industry, ensuring the quality and correct classification of
 
 Traditionally, rice classification has relied on manual inspection, which is time-consuming, subjective, and prone to human error. As global demand grows, the industry needs scalable, automated, and accurate solutions. This project leverages a Convolutional Neural Network (CNN) to automate the classification of rice varieties based on image data. By analyzing grain features visually, the model assists in quality control, packaging, and supply chain verification, providing a faster, more consistent alternative to manual sorting.
 
-## The Dat
+## The Data
 
 Dataset: https://www.kaggle.com/datasets/muratkokludataset/rice-image-dataset
 
@@ -37,7 +37,7 @@ Rice types:
   ```
 - **Train/Val/Test Split**: 70% / 15% / 15%
 
-## 🧠 CNN Architecture
+## CNN Architecture
 ```
 Input: 3×64×64 RGB Image
 ↓ Conv2D (3→16, kernel=5, padding=2) + ReLU
@@ -50,10 +50,18 @@ Input: 3×64×64 RGB Image
 ```
 - Total trainable parameters: **268,164**
 
-## 📈 Training Performance
+## Training Performance
 
-### 🔺 Training Loss and Test Accuracy
+### Training Loss and Test Accuracy
 Training Loss shows how well the model minimizes the classification error over training epochs. While Test Accuracy tracks model generalization across unseen test data after each epoch.
 
 ![training_loss](https://github.com/user-attachments/assets/fb2e7f5c-0241-4c5a-a663-7403a076800a)
 
+Loss starts high (~155) and drops quickly within the first two epochs, while the test accuracy increases over the epochs. The model is learning effectively and minimizing classification error with each epoch.
+
+### Confusion Matrix
+Displays how often predictions match the actual rice class.
+
+![rice_Image_Confusion_matrix](https://github.com/user-attachments/assets/8d04b76f-fde4-47ff-8772-8ea2547d0777)
+
+Model performs extremely well across all classes, very minimal misclassifications, mostly between visually similar grains.
